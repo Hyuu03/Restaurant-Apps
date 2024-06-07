@@ -1,0 +1,219 @@
+@media screen and (min-width: 650px) {
+    .app-bar {
+      grid-template-columns: 1fr auto;
+      padding: 8px 32px;
+    }
+   
+    .app-bar .app-bar__brand h1 {
+      font-size: 1em;
+    }
+   
+    .app-bar .app-bar__menu {
+      display: none;
+    }
+   
+    .app-bar .app-bar__navigation {
+      position: static;
+      width: 100%;
+    }
+   
+    .app-bar .app-bar__navigation ul li {
+      display: inline-block;
+    }
+   
+    .app-bar .app-bar__navigation ul li a {
+      display: inline-block;
+      width: 120px;
+      text-align: center;
+      margin: 0;
+      /* font-size: 18px; */
+    }
+  }
+   
+  @media screen and (min-width: 800px) {
+    .app-bar .app-bar__brand h1 {
+      font-size: 1em;
+    }
+  }
+   
+
+
+  @media screen and (max-width: 1200px) {
+    .restaurant-container {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 10px; 
+    }
+  }
+  
+  @media screen and (max-width: 991px) {
+    .TampilAwal{
+      max-width: 700px;
+    }
+  
+    .TampilAwal h1 {
+      font-size: 36px;
+    }
+  
+    .TampilAwal p {
+      font-size: 18px;
+    }
+  
+    .restaurant-container {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .TampilAwal{
+      max-width: 600px;
+    }
+  
+    .TampilAwal h1 {
+      font-size: 34px;
+    }
+  
+    .TampilAwal p {
+      font-size: 16px;
+    }
+
+    .review-card-container{
+      font-size: 14px;
+    }
+  
+    .restaurant-container {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 10px;
+    }
+
+    .menu-list{
+      grid-template-columns: repeat(1, minmax(200px, 1fr));
+    }
+  }
+  
+  @media screen and (max-width: 617px) {
+    /* .logo{
+      font-size: 1.3rem;
+    } */
+
+    .hero{
+      min-height: 380px;
+      background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('/src/public/images/sharp/hero-image_4-small.jpg');
+      transition: min-height 0.3s;
+    }
+
+    .TampilAwal {
+      max-width: 500px;
+    }
+  
+    .TampilAwal h1 {
+      font-size: 30px;
+    }
+  
+    .TampilAwal p {
+      font-size: 14px;
+    }
+  
+    .container h2{
+      font-size: 1.3em;
+    }
+
+    .container h2.namaResto{
+      font-size: 20px;
+    }
+  
+    .restaurant-name, .restaurant-rating, .restaurant-description {
+      padding: 16px 32px 32px 32px
+    }
+  
+    .restaurant-name {
+      font-size: 18px
+    }
+  
+    .restaurant-description {
+      font-size: 14px
+    }
+  
+    .restaurant-container {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 10px;
+    }
+
+    .rating-detail{
+      font-size: 14px;
+    }
+
+    .address{
+      font-size: 14px;
+    }
+
+    .tag,
+    .tag2{
+      font-size: 14px;
+    }
+
+  }
+  
+  @media screen and (max-width: 520px) {
+    .TampilAwal {
+      max-width: 400px;
+    }
+  
+    .TampilAwal h1 {
+      font-size: 28px;
+    }
+  
+    .TampilAwal p {
+      font-size: 12px;
+    }
+  
+    .restaurant-container {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 10px; 
+    }
+
+    .city-detail{
+      font-size: 12px;
+    }
+
+    .detail-food li,
+    .detail-drink li{
+      font-size: 13px;
+    }
+
+  }
+  
+  @media screen and (max-width: 462px) {
+    .restaurant-container {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 10px; 
+    }
+  }
+  
+  @media screen and (max-width: 371px) {
+    .TampilAwal {
+      max-width: 335px;
+    }
+  
+    .TampilAwal h1 {
+      font-size: 20px;
+    }
+  
+    .TampilAwal p {
+      font-size: 10px;
+    }
+  
+    .restaurant-container {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 10px;
+    }
+  
+    .restaurant-name {
+      font-size: 14px
+    }
+  
+    .restaurant-city{
+      font-size: 10px;
+    }
+  
+  }

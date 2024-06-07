@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+	margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+	width: 100%;
+	height: 100%
+}
+
+body {
+	font-size: 20px;
+	color: #424242
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  font-size: 18px;
+  padding: 8px;
+  background-color: red;
+  color: white;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/*
+  AppBar
+*/
+ 
+.app-bar {
+  padding: 1rem 5%;
+  background-color: #333;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+ 
+.app-bar .app-bar__menu {
+  display: flex;
+  align-items: center;
+  padding-left: 90%;
+}
+ 
+.app-bar .app-bar__menu button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 8px;
+  cursor: pointer;
+  min-width: 44px;
+  min-height: 44px;
+}
+ 
+.app-bar .app-bar__brand {
+  display: flex;
+  align-items: center;
+}
+ 
+.app-bar .app-bar__brand h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1em;
+  user-select: none;
+}
+ 
+.app-bar .app-bar__navigation {
+  position: absolute;
+  top: 50px;
+  left: -100%;
+  width: 100%;
+  transition: all 0.3s;
+  padding: 8px;
+  /* background-color: #333; */
+  overflow: hidden;
+}
+ 
+.app-bar .app-bar__navigation.open {
+  left: 0;
+  background-color: #333;
+}
+ 
+.app-bar .app-bar__navigation ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+
+.hero {
+  display: flex;
+	align-items: center;
+	min-height: 480px;
+	width: 100%;
+	text-align: center;
+	background-position: center;
+	background-color: Black;
+  background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('/src/public/images/sharp/hero-image_4-large.jpg');
+  transition: min-height 0.3s;
+}
+
+.TampilAwal{
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.TampilAwal h1{
+  color: white;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.TampilAwal p{
+  color: white;
+  margin-top: 14px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+main{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.restaurant-list{
+  padding: 30px;
+}
+
+.detail-container{
+  padding: 50px 12%;
+}
+
+.container{
+  width: 100%;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	text-align: center
+}
+
+.container h1{
+  font-weight: 700;
+	font-size: 2em;
+	margin-bottom: 50px;
+  color: #333;
+}
+
+.container h2{
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.restaurant-container{
+  margin: 32px auto auto;
+	text-align: left;
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+  padding: 10px 150px;
+}
+
+.restaurant-info{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 100%;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+}
+
+.restaurant-image{
+  width: 100%;
+	max-height: 200px
+}
+
+.restaurant-img{
+  width: 100%;
+}
+
+.restaurant-name{
+  font-weight: 500;
+	font-size: 16px;
+	margin-top: 10px;
+	transition: 0.3s;
+  text-decoration: none;
+  padding: 16px;
+  color: #333;
+}
+
+.restaurant-info a:hover{
+  opacity: 0.5;
+}
+
+/* .restaurant-name a{
+  font-size: 1.2em;
+  text-decoration: none;
+  color: inherit;
+} */
+
+.restaurant-description{
+  margin-top: -30px;
+	font-size: 12px;
+	line-height: 1.5em;
+  padding: 16px;
+  color: #333;
+}
+
+.restaurant-city{
+  position: absolute;
+	top: 216px;
+	right: 16px;
+	border-radius: 5px;
+	background-color: #333;
+	padding: 5px 10px 5px;
+	color: white;
+	font-weight: 500;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.restaurant-desc-detail{
+  font-size: 14px;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+.city-detail{
+  border-radius: 5px;
+  background-color: #333;
+  padding: 5px 10px 5px;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.tag {
+  background-color: #333;
+  border-radius: 5px;
+  padding: 5px 5px 5px;
+  margin-left: 10px;
+  color: white;
+  font-weight: 400;
+  display: inline;
+}
+
+.restaurant-content {
+  padding: 16px;
+}
+
+.restaurant-rating{
+  font-size: 15px;
+	text-transform: uppercase;
+	color: #333;
+	font-weight: 500;
+	text-decoration: none;
+  padding: 16px;
+}
+
+.rating-detail{
+  padding: 10px 0;
+}
+
+.review-card {
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.menu-list {
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.food,
+.drink {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.detail-food li,
+.detail-drink li {
+  list-style: none;
+  margin: 10px 15px;
+  padding: 1px;
+  color: #333;
+  text-align: left;
+}
+
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+  
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+	background-color: #333;
+	color: white;
+	font-size: 14px;
+	padding: 2em;
+	width: 100%;
+	text-align: center
+}
+
+
